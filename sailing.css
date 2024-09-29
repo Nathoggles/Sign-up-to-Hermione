@@ -1,0 +1,8 @@
+body {
+    height: 100vh;
+    display: flex;
+}
+#hero {
+    flex-basis: 20%;
+    background-color: green;
+}
