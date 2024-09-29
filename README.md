@@ -1,1 +1,1 @@
-# Sign-up-to-Hermione
+# Let's sail!
