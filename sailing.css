@@ -11,7 +11,6 @@ body {
     height: 100vh;
     width: 100vw;
     display: flex;
-    border: 1px solid red;
 }
 #hero {
     flex-basis: 27.3%;
@@ -26,23 +25,23 @@ video{
     padding: 0;
 }
 
-#hero-text {
+#heroText {
     display: flex;
     gap: 3%;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 20%;
+    bottom: 70%;
     width: 100%;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     font-family: "Alegreya", serif;
-    font-size: 4rem;
+    font-size: 8rem;
     font-weight: 600;
 }
 
-#hero-footer {
+#heroFooter {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -50,23 +49,80 @@ video{
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     font-family: "Alegreya", serif;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 200;
 }
-.footerA {
-    color: white
+a, p {
+    color: white;
 }
 
+
 #content {
-   display: flex;
-   flex-direction: column;
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
+    border-left: 0.4rem solid /* #001F3F; */ white;
 }
 .contentContainer {
     width: 100%;
 }
 
-#container1 {
-    height: 29.35%;
-    background-color: #3A6D8C;
+.pLarge{
+    margin-bottom: 1rem;
 }
+
+.pSmall {
+    font-size: 2rem;
+    font-weight: 150;
+    max-inline-size: 200ch;
+}
+
+#container1 {
+    padding: 2%;
+    padding-left: 10%;
+    height: 30%;
+    /* background-color: #6A9AB0; */
+    background-color: #3A6D8C;
+    font-family: "Alegreya", serif;
+    font-size: 3.5rem;
+    font-weight: 500;
+  /*   font-style: italic; */
+}
+
+#container2 {
+    flex-grow: 1;
+    background-color: #EAD8B1;
+/* box-shadow: 0px -3px 5px 2px rgba(0,0,0,0.62), 0px 3px 5px 2px rgba(0,0,0,0.62); */
+box-shadow: 0px -6px 4px -7px rgba(0,0,0,62), 0px 6px 4px -4px rgba(0,0,0,62);
+/* box-shadow: 10px 5px 5px black; */
+position:relative;
+    z-index:999;
+    color:#1d4772;
+}
+
+button {
+    background-color: #EAD8B1;
+    color:#1d4772;
+    border-radius: 10px;
+    margin-top: 3rem;
+    box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.62);
+}
+
+button:hover {
+   background-color: #ddc38b;
+}
+button:active{
+    background-color: #ceb174
+}
+#container3 {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    height: 30%;
+   /*  background-color: #3A6D8C; */
+   background-color: #6A9AB0;
+   justify-content: start;
+   align-items: center;
+}
+#container3 > p {font-size: 2rem}
+#container3 > p > a {color: #1d4772}
