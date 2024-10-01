@@ -38,11 +38,11 @@
                   <form id="contactForm" method="post" action="https://httpbin.org/post">
                     <div class="formInput">
                         <label class="label" for="firstName">First name:</label>
-                        <input type="text" class="contact" id="firstName" name="user_firstname" maxlength="50" placeholder="Your first name"pattern="[a-zA-Z\-]{2,22}" required>
+                        <input type="text" class="contact name" id="firstName" name="user_firstname" maxlength="50" placeholder="Your first name"pattern="[a-zA-Z\-]{2,22}" required>
                     </div>
                     <div class="formInput">
                         <label class="label" for="lastName">Last name:</label>
-                        <input type="text" class="contact" id="lastName" name="user_lastname" maxlength="50" placeholder="Your surname"pattern="[a-zA-Z\-]{2,22}" required>
+                        <input type="text" class="contact name" id="lastName" name="user_lastname" maxlength="50" placeholder="Your surname"pattern="[a-zA-Z\-]{2,22}" required>
                     </div>
                     <div class="formInput">
                     <label class="label" for="email" >E-mail:</label>
@@ -50,15 +50,15 @@
                     </div>
                     <div class="formInput">
                         <label class="label" for="phone">Phone number:</label>
-                        <input type="tel" class="contact" id="phone" name="user_phone" minlength="8" maxlength="20" placeholder="+1 123 456 789" required>
+                        <input type="tel" class="contact" id="phone" name="user_phone" minlength="8" maxlength="20" placeholder="+1 123 123 1234" pattern="^(?=.*[0-9]{4})[0-9\+\(\)\.\s\-,]+$" required>
                     </div>
                     <div class="formInput">
                         <label class="label" for="pw1">Password:</label>
-                        <input type="password" class="contact" id="pw1" name="user_password" maxlength="50" placeholder="min. 6 characters, one capital letter, one number" pattern="[a-zA-Z\-]{2,22}" required>
+                        <input type="password" class="contact" id="pw1" name="user_password1" maxlength="50" placeholder="min. 6 characters, one capital letter, one number" pattern="^(?=.*[A-Z])(?=.*\d)[\S]{6,}$" required>
                     </div>
                     <div class="formInput">
-                        <label class="label" for="pw1">Confirm password:</label>
-                        <input type="password" class="contact" id="pw2" name="user_password" maxlength="50" placeholder="repeat your password" pattern="[a-zA-Z\-]{2,22}" required>
+                        <label class="label" for="pw2">Confirm password:</label>
+                        <input type="password" class="contact" id="pw2" name="user_password2" maxlength="50" placeholder="repeat your password" pattern="^(?=.*[A-Z])(?=.*\d)[\S]{6,}$" required>
                     </div>
               </div>
               <div id="emptyDiv"></div>
