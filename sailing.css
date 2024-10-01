@@ -71,6 +71,7 @@ a, p {
     flex-direction: column;
     gap: 1%;
     justify-content: start;
+    padding: 0;
 }
 
 .pMid{
@@ -85,7 +86,7 @@ a, p {
 }
 
 #container1 {
-    padding: 2%;
+    padding: 1%;
     padding-left: 10%;
     height: 30%;
     background-color: #3A6D8C;
