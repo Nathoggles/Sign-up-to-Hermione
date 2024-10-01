@@ -60,7 +60,7 @@ a, p {
 #content {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    flex-basis: 72.7%;
     border-left: 0.4rem solid /* #001F3F; */ white;
 }
 .contentContainer {
@@ -92,20 +92,51 @@ a, p {
 #container2 {
     flex-grow: 1;
     background-color: #EAD8B1;
-/* box-shadow: 0px -3px 5px 2px rgba(0,0,0,0.62), 0px 3px 5px 2px rgba(0,0,0,0.62); */
-box-shadow: 0px -6px 4px -7px rgba(0,0,0,62), 0px 6px 4px -4px rgba(0,0,0,62);
-/* box-shadow: 10px 5px 5px black; */
-position:relative;
+    box-shadow: 0px -6px 4px -7px rgba(0,0,0,62), 0px 6px 4px -4px rgba(0,0,0,62);
+    position:relative;
     z-index:999;
     color:#1d4772;
+    display: flex; 
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 2rem;
+}
+#emptyDiv {
+    width: 20%;
+}
+#formDiv{
+    width: 80%;
+    margin-left: 5%;
 }
 
+legend {
+    font-size: 2.5rem;
+    font-weight: 550;
+}
+#contactForm {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 5%; 
+    padding: 2%;
+}
+
+.formInput {
+    width: 25vw;
+}
+.contact {
+    width: 100%;
+}
 button {
     background-color: #EAD8B1;
     color:#1d4772;
     border-radius: 10px;
     margin-top: 3rem;
     box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.62);
+    width: 15vw;
 }
 
 button:hover {
@@ -119,10 +150,14 @@ button:active{
     flex-direction: column;
     gap: 5%;
     height: 30%;
+    padding-left: 5%;
    /*  background-color: #3A6D8C; */
    background-color: #6A9AB0;
    justify-content: start;
-   align-items: center;
+   align-items: left;
 }
-#container3 > p {font-size: 2rem}
+#container3 > p 
+{font-size: 1.8rem;
+    margin-left: 0.5%;
+}
 #container3 > p > a {color: #1d4772}
