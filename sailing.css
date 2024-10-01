@@ -107,7 +107,7 @@ a, p {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 #emptyDiv {
     width: 20%;
@@ -157,17 +157,18 @@ input:not(:placeholder-shown):not(:focus):invalid{
 label {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
 }
+
 label:has(+ input:not(:placeholder-shown):not(:focus):invalid)::after{
     animation: fadeIn 0.75s;
     color: var(--smoothred);
-    margin-right: 0;
-    font-size: 1.2rem;
+    margin-left: auto;
+    font-size: 1rem;
 }
 
 label:has(+ #email:not(:placeholder-shown):not(:focus):invalid)::after {
-    content: "Incorrect format. Don't forget the '@'-sign and your host's domain name!";
+    content: "Don't forget the '@'-sign and your host's domain name!";
 }
 
 label:has(+.contact.name:not(:placeholder-shown):not(:focus):invalid)::after {
@@ -175,7 +176,7 @@ label:has(+.contact.name:not(:placeholder-shown):not(:focus):invalid)::after {
 }
 
 label:has(+ #pw1:not(:placeholder-shown):not(:focus):invalid)::after {
-    content: "Please use one capital letter, one number and at least 6 characters";
+    content: "A capital letter, a number and 6+ characters required";
 }
 
 label:has(+ #pw2:not(:placeholder-shown):not(:focus):invalid)::after {
