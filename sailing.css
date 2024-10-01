@@ -123,9 +123,55 @@ legend {
     gap: 5%; 
     padding: 2%;
 }
+input {
+    color: #1d4772;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
 
 .formInput {
     width: 25vw;
+}
+input::placeholder{
+    color: #a19a8a;
+}
+
+input:not(:placeholder-shown):not(:focus):invalid{
+    border: 2px rgb(192, 60, 60) solid;
+}
+
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+label:has(+ input:not(:placeholder-shown):not(:focus):invalid)::after{
+    animation: fadeIn 0.75s;
+    color: rgb(192, 60, 60);
+    margin-right: 0;
+}
+
+label:has(+ #email:not(:placeholder-shown):not(:focus):invalid)::after {
+    font-size: 1.2rem;
+    content: "Incorrect format. Don't forget the '@'-sign and your host's domain name!";
+}
+
+
+
+.formInput {
+    position: relative; /* Ensure relative positioning for the input’s parent container */
+}
+
+input:focus{
+    border: 2px #1d4772 solid;
 }
 .contact {
     width: 100%;
